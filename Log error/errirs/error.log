@@ -1,0 +1,34 @@
+[Fri May 13 00:00:35.374884 2022] [mpm_event:notice] [pid 458515:tid 140169666600000] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Fri May 13 00:00:35.374930 2022] [core:notice] [pid 458515:tid 140169666600000] AH00094: Command line: '/usr/sbin/apache2'
+[Fri May 13 00:17:13.558785 2022] [core:error] [pid 549690:tid 140169641408256] [client 128.1.248.26:38296] AH00126: Invalid URI in request HEAD /icons/.%2e/%2e%2e/apache2/icons/sphere1.png HTTP/1.1
+[Fri May 13 01:08:40.204304 2022] [core:error] [pid 549690:tid 140168757483264] [client 193.118.53.202:44854] AH00126: Invalid URI in request HEAD /icons/.%2e/%2e%2e/apache2/icons/sphere1.png HTTP/1.1
+[Fri May 13 03:22:09.026856 2022] [core:error] [pid 549690:tid 140169529251584] [client 161.35.86.181:36242] AH00126: Invalid URI in request GET /cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/hosts HTTP/1.1
+[Fri May 13 07:26:26.236181 2022] [core:error] [pid 549690:tid 140167801206528] [client 45.9.20.101:52154] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Fri May 13 10:30:01.007161 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715] ERROR:OTRS_Chat_Bot:Exception on /User_Auth [POST]
+[Fri May 13 10:30:01.007241 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715] Traceback (most recent call last):
+[Fri May 13 10:30:01.007254 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1499, in full_dispatch_request
+[Fri May 13 10:30:01.007264 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715]     rv = self.dispatch_request()
+[Fri May 13 10:30:01.007271 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1485, in dispatch_request
+[Fri May 13 10:30:01.007279 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Fri May 13 10:30:01.007287 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715]   File "/usr/local/lib/python3.8/dist-packages/flask_restful/__init__.py", line 467, in wrapper
+[Fri May 13 10:30:01.007295 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715]     resp = resource(*args, **kwargs)
+[Fri May 13 10:30:01.007302 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715]   File "/usr/local/lib/python3.8/dist-packages/flask/views.py", line 83, in view
+[Fri May 13 10:30:01.007310 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715]     return self.dispatch_request(*args, **kwargs)
+[Fri May 13 10:30:01.007318 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715]   File "/usr/local/lib/python3.8/dist-packages/flask_restful/__init__.py", line 582, in dispatch_request
+[Fri May 13 10:30:01.007325 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715]     resp = meth(*args, **kwargs)
+[Fri May 13 10:30:01.007333 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715]   File "/var/www/OTRS_Chat_Bot/OTRS_Chat_Bot/__init__.py", line 58, in post
+[Fri May 13 10:30:01.007341 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715]     numbers[1] = numbers[1].replace('whatsapp:', '')
+[Fri May 13 10:30:01.007348 2022] [wsgi:error] [pid 549691:tid 140168606512896] [client 192.168.43.43:50715] IndexError: list index out of range
+[Fri May 13 10:30:22.958953 2022] [wsgi:error] [pid 549691:tid 140169260816128] [client 192.168.43.43:52657] mod_wsgi (pid=549691): Failed to exec Python script file '/var/www/CV_Analysis/CV_Analysis.wsgi'.
+[Fri May 13 10:30:22.959067 2022] [wsgi:error] [pid 549691:tid 140169260816128] [client 192.168.43.43:52657] mod_wsgi (pid=549691): Exception occurred processing WSGI script '/var/www/CV_Analysis/CV_Analysis.wsgi'.
+[Fri May 13 10:30:22.962106 2022] [wsgi:error] [pid 549691:tid 140169260816128] [client 192.168.43.43:52657] Traceback (most recent call last):
+[Fri May 13 10:30:22.962178 2022] [wsgi:error] [pid 549691:tid 140169260816128] [client 192.168.43.43:52657]   File "/var/www/CV_Analysis/CV_Analysis.wsgi", line 7, in <module>
+[Fri May 13 10:30:22.962191 2022] [wsgi:error] [pid 549691:tid 140169260816128] [client 192.168.43.43:52657]     from CV_Analysis import app as application
+[Fri May 13 10:30:22.962224 2022] [wsgi:error] [pid 549691:tid 140169260816128] [client 192.168.43.43:52657]   File "/var/www/CV_Analysis/CV_Analysis/__init__.py", line 7, in <module>
+[Fri May 13 10:30:22.962234 2022] [wsgi:error] [pid 549691:tid 140169260816128] [client 192.168.43.43:52657]     import win32com.client
+[Fri May 13 10:30:22.962272 2022] [wsgi:error] [pid 549691:tid 140169260816128] [client 192.168.43.43:52657] ModuleNotFoundError: No module named 'win32com'
+[Fri May 13 11:36:54.550386 2022] [core:error] [pid 549691:tid 140169633015552] [client 143.198.136.88:45316] AH00126: Invalid URI in request GET /cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/hosts HTTP/1.1
+[Fri May 13 17:15:29.170960 2022] [mpm_event:notice] [pid 458515:tid 140169666600000] AH00493: SIGUSR1 received.  Doing graceful restart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+[Fri May 13 17:15:29.237704 2022] [mpm_event:notice] [pid 458515:tid 140169666600000] AH00489: Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Fri May 13 17:15:29.237732 2022] [core:notice] [pid 458515:tid 140169666600000] AH00094: Command line: '/usr/sbin/apache2'
